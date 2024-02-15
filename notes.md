@@ -13,4 +13,6 @@ $ make -j$(nproc)
 
 ```bash
 $ sudo openocd -f tcl/interface/jlink.cfg -f tcl/target/rp2040.cfg -c "adapter speed 6000"
+
+$ openocd -f tcl/interface/jlink.cfg -c "transport select swd" -c "adapter_khz 6000" -f tcl/target/rp2040.cfg  -c "program buspiratev.elf reset exit"
 ```
