@@ -1,7 +1,5 @@
 ### BP5 Make and build files
 
-Create a build directory and navigate to it:
-
 ```bash
 $ mkdir build && cd build
 $ cmake ..
